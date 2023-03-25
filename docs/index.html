@@ -35,7 +35,22 @@
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+
+	<script>
+	const Http = new XMLHttpRequest();
+	const url='http://sto01.pylexnodes.net:30067/api/getmemoryinfo';
+	Http.open("GET", url);
+	Http.send();
+
+	Http.onreadystatechange = (e) => {
+	  var json = Http.responseText
+	}
+
+	document.body.innerHTML = document.body.innerHTML.replace("{{hanbunsaidai}}", json["saidai"]);
+	document.body.innerHTML = document.body.innerHTML.replace("{{memory}}", json["memory"]);
+	document.body.innerHTML = document.body.innerHTML.replace("{{saidai}}", json["saidai"]);
+	</script>	
   </head>
   <body class="bg-dark text-light">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
