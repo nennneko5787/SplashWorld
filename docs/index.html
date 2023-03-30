@@ -12,13 +12,16 @@
 
 	<meta property="og:title" content="SplashWorld - Home">
 	<meta property="og:type" content="website">
-	<meta property="og:description" content="SplashWorldはJava版と統合版で遊べる、ス○ラトゥーン3風のMinecraftサーバーです！">
+	<meta property="og:description" content="SplashWorldはJava版と統合版で遊べる、ス○ラトゥーン風のMinecraftサーバーです！">
 	<meta property="og:url" content="https://www.nennneko5787.ml/SplashWorld/">
 	<meta property="og:site_name" content="SplashWorld">
 	<meta property="og:image" content="https://cdn.discordapp.com/attachments/1043083931794292767/1089122146967638166/4ed3c9949d1bdd5b11daf8466092a030.png">
-	<meta property="og:country-name" content="スウェーデン">
+	<meta property="og:country-name" content="日本">
 	<meta property="og:email" content="nuko_star@nennneko5787.ml">
 	<meta name="twitter:card" content="summary">
+	<meta name="Description" content="SplashWorldはJava版と統合版で遊べる、ス○ラトゥーン風のMinecraftサーバーです！">
+	<meta name="KeyWords" content="Minecraft, minecraft, マインクラフト, マイクラ, まいんくらふと, まいくら, Java, 統合版, Bedrock, Splatoon, splatoon, スプラトゥーン, スプラ, すぷらとぅーん, すぷら">
+	<meta name="Author" content="nennneko5787">
 
 	<style type="text/css">
         body {
@@ -84,7 +87,7 @@
 	<div class="bg-light text-dark">
 	<font size="+3"><b><p style="text-align:center;">SplashWorldとは?</p></b></font>
 	<p style="text-align:center;">
-	SplashWorldは、Splatoon3をマインクラフトで再現しようとしているnennneko5787の個人プロジェクトです。<font size="-3"><a href="#warn1">※1</a></font>Java版と統合版<font size="-3"><a href="#warn2">※2</a></font>で遊べます。<br><a href="https://cdn.discordapp.com/attachments/1043083931794292767/1089095123448643584/2023-03-25_16.54.34.png" data-lightbox="group"><img src="https://cdn.discordapp.com/attachments/1043083931794292767/1089095123448643584/2023-03-25_16.54.34.png" alt="チャージャーで防具立てを倒す写真" title="チャージャーで防具立てを倒す写真" style="width:50vw; height:20vw"></img></a></p>
+	SplashWorldは、Splatoonをマインクラフトで再現しようとしているnennneko5787の個人プロジェクトです。<font size="-3"><a href="#warn1">※1</a></font>Java版と統合版<font size="-3"><a href="#warn2">※2</a></font>で遊べます。<br><a href="https://cdn.discordapp.com/attachments/1043083931794292767/1089095123448643584/2023-03-25_16.54.34.png" data-lightbox="group"><img src="https://cdn.discordapp.com/attachments/1043083931794292767/1089095123448643584/2023-03-25_16.54.34.png" alt="チャージャーで防具立てを倒す写真" title="チャージャーで防具立てを倒す写真" style="width:50vw; height:20vw"></img></a></p>
 	</div>
 	<br>
 	<div class="bg-light text-dark">
@@ -138,9 +141,9 @@
 
 	Http.onreadystatechange = (e) => {
 	  var json = JSON.parse(Http.responseText);
-	  document.body.innerHTML = document.body.innerHTML.replace("{{hanbun}}",json.hanbun]);
-	  document.body.innerHTML = document.body.innerHTML.replace("{{saidai}}",json.saidai]);
-	  document.body.innerHTML = document.body.innerHTML.replace("{{memory}}",json.memory]);
+	  document.body.innerHTML = document.body.innerHTML.replace("{{hanbun}}",json.hanbun);
+	  document.body.innerHTML = document.body.innerHTML.replace("{{saidai}}",json.saidai);
+	  document.body.innerHTML = document.body.innerHTML.replace("{{memory}}",json.memory);
 	}
     </script>
   </body>
