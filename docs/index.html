@@ -138,9 +138,9 @@
 
 	Http.onreadystatechange = (e) => {
 	  var json = JSON.parse(Http.responseText);
-	  document.body.innerHTML = document.body.innerHTML.replace("{{hanbun}}",json["hanbun"]);
-	  document.body.innerHTML = document.body.innerHTML.replace("{{saidai}}",json["saidai"]);
-	  document.body.innerHTML = document.body.innerHTML.replace("{{memory}}",json["memory"]);
+	  document.body.innerHTML = document.body.innerHTML.replace("{{hanbun}}",json.hanbun]);
+	  document.body.innerHTML = document.body.innerHTML.replace("{{saidai}}",json.saidai]);
+	  document.body.innerHTML = document.body.innerHTML.replace("{{memory}}",json.memory]);
 	}
     </script>
   </body>
