@@ -88,10 +88,10 @@
 	</div>
 	<br>
 	<div class="bg-light text-dark">
-	<font size="+3"><b><p style="text-align:center;">最大15人vs16人でオンライン対戦!?!?<font size="-3"><a href="#warn3">※3</a></font></p></b></font>
+	<font size="+3"><b><p style="text-align:center;">最大{{hanbun}}人vs{{hanbun}}人でオンライン対戦!?!?<font size="-3"><a href="#warn3">※3</a></font></p></b></font>
 	<p style="text-align:center;">
-	SplashWorldでは、メモリを現在6144MB搭載しているので、約31人入れます。<font size="-3"><a href="#warn3">※3</a></font><br>
-	なので、最大15人vs16人オンライン対戦<font size="-3"><a href="#warn3">※3</a></font>という、恐ろしい対戦ができてしまいます。<br><a href="https://cdn.discordapp.com/attachments/1043083931794292767/1089111482039541881/2023-03-25_17.59.49.png" data-lightbox="group"><img src="https://cdn.discordapp.com/attachments/1043083931794292767/1089111482039541881/2023-03-25_17.59.49.png" alt="ブタライド" title="ブタライド" style="width:50vw; height:20vw"></img></a></p>
+	SplashWorldでは、メモリを現在{{memory}}MB搭載しているので、約{{saidai}}人入れます。<font size="-3"><a href="#warn3">※3</a></font><br>
+	なので、最大{{hanbun}}人vs{{hanbun}}人でオンライン対戦<font size="-3"><a href="#warn3">※3</a></font>という、恐ろしい対戦ができてしまいます。<br><a href="https://cdn.discordapp.com/attachments/1043083931794292767/1089111482039541881/2023-03-25_17.59.49.png" data-lightbox="group"><img src="https://cdn.discordapp.com/attachments/1043083931794292767/1089111482039541881/2023-03-25_17.59.49.png" alt="ブタライド" title="ブタライド" style="width:50vw; height:20vw"></img></a></p>
 	</div>
 	<br>
 	<div class="bg-light text-dark">
@@ -130,5 +130,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
+    <script>
+	const Http = new XMLHttpRequest();
+	const url='https://splashworld.nennneko5787.repl.co/api/getmemoryinfo/';
+	Http.open("GET", url);
+	Http.send();
+
+	Http.onreadystatechange = (e) => {
+	  var json = Http.responseText;
+	  document.body.innerHTML = document.body.innerHTML.replace("{{hanbun}}",json["hanbun"]);
+	  document.body.innerHTML = document.body.innerHTML.replace("{{saidai}}",json["saidai"]);
+	  document.body.innerHTML = document.body.innerHTML.replace("{{memory}}",json["memory"]);
+	}
+    </script>
   </body>
 </html>
