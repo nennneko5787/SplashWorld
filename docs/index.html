@@ -137,7 +137,7 @@
 	Http.send();
 
 	Http.onreadystatechange = (e) => {
-	  var json = Http.responseText;
+	  var json = JSON.parse(Http.responseText);
 	  document.body.innerHTML = document.body.innerHTML.replace("{{hanbun}}",json["hanbun"]);
 	  document.body.innerHTML = document.body.innerHTML.replace("{{saidai}}",json["saidai"]);
 	  document.body.innerHTML = document.body.innerHTML.replace("{{memory}}",json["memory"]);
