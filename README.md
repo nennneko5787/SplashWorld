@@ -1,6 +1,6 @@
 # SplashWorld
 ス○ラトゥーン3風のMinecraftサーバー。ソースコードは近日公開予定。
-<pre>Server Address: SplashWorld.playerrealms.com</pre>
+<pre>Server Address: play.SplashWorld.nennneko5787.ml</pre>
 ## 必要なプラグイン
 Citizens, CitizensCMD, DiSky, HolographicDisplays, LuckPerms, LunaChat*, Multiverse-Core, ProtocolLib, Reqn*, SkQuery, skRayFall, Skript, skript-reflect, Vault
 ## 必要じゃないけど入れてるプラグイン
