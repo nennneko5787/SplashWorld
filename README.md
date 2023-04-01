@@ -1,5 +1,5 @@
 # SplashWorld
-ス○ラトゥーン3風のMinecraftサーバー。ソースコードは近日公開予定。
+ス○ラトゥーン風のMinecraftサーバー。ソースコードは近日公開予定。
 <pre>Server Address: play.SplashWorld.nennneko5787.ml
 統合版のポートは30369</pre>
 ## 必要なプラグイン
